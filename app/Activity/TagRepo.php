@@ -133,6 +133,7 @@ class TagRepo
         return new Tag([
             'name'  => trim($input['name']),
             'value' => trim($input['value'] ?? ''),
+            'order' => trim($input['order'] ?? 0),
         ]);
     }
 }
